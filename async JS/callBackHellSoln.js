@@ -19,10 +19,10 @@ getUser('arkapatra31', getRepositories)
 
 //Using named function to solve callback hell
 function getRepositories(user){
-    getRepositories(user,getCommits)
+    getRepos(user,getCommits)
 }
 function getCommits(repos){
-    getCommits(repos,displayCommits)
+    getCommit(repos,displayCommits)
 }
 function displayCommits(commits){
     console.log(commits);
