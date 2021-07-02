@@ -4,7 +4,8 @@
   "description": "Asynchronous JS codebase",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "script1": "nodemon callBackHell.js",
+    "script2": "nodemon callBackHellSoln.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
