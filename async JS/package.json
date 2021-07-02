@@ -1,0 +1,15 @@
+{
+  "name": "async-js",
+  "version": "1.0.0",
+  "description": "Asynchronous JS codebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Async",
+    "JS"
+  ],
+  "author": "Arka Patra",
+  "license": "ISC"
+}
