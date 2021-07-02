@@ -4,6 +4,7 @@
   "description": "Asynchronous JS codebase",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +12,8 @@
     "JS"
   ],
   "author": "Arka Patra",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.9"
+  }
 }
