@@ -3,6 +3,7 @@ getUser("arkapatra31")
     .then(user => getRepos(user))
     .then(repos => getCommits(repos[0]))
     .then(commit => console.log(commit))
+    .catch(err => console.log(`Error in CallBack ${err.message}`))
 
 //console.log("Logging statement 2");
 
