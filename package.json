@@ -6,9 +6,11 @@
   "type": "",
   "dependencies": {
     "express": "^4.17.1",
+    "india-pincode-lookup": "^1.0.3",
     "mongoose": "^5.12.14",
     "nodemon": "^2.0.9",
-    "underscore": "^1.13.1"
+    "underscore": "^1.13.1",
+    "zipcodes": "^8.0.0"
   },
   "devDependencies": {},
   "scripts": {
