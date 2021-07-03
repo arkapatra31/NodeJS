@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Asynchronous JS codebase",
   "main": "index.js",
+  "module": "es2016",
   "scripts": {
     "script1": "nodemon callBackHell.js",
     "script2": "nodemon callBackHellSoln.js",
@@ -15,6 +16,8 @@
   "author": "Arka Patra",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.9"
   }
 }
