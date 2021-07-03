@@ -9,6 +9,7 @@
     "india-pincode-lookup": "^1.0.3",
     "mongoose": "^5.12.14",
     "nodemon": "^2.0.9",
+    "postal-codes-js": "^2.5.2",
     "underscore": "^1.13.1",
     "zipcodes": "^8.0.0"
   },
