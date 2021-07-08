@@ -1,0 +1,26 @@
+[{
+        "user": "Arka",
+        "userName": "arka31",
+        "purpose": "Sudo"
+    },
+    {
+        "user": "Arun",
+        "userName": "arun123",
+        "purpose": "admin"
+    },
+    {
+        "user": "Jacob",
+        "userName": "jac45",
+        "purpose": "testing"
+    },
+    {
+        "user": "Ray",
+        "userName": "ray87",
+        "purpose": "guest"
+    },
+    {
+        "user": "John",
+        "userName": "john231",
+        "purpose": "guest"
+    }
+]

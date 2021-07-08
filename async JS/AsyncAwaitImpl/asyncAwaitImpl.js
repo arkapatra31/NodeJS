@@ -1,23 +1,14 @@
 const {movieList} = require('./movieList')
 const {users} = require('./users')
 
-//console.log(movieList)
-//console.log(users);
-
-async function process(){
-    let suggestedMovieList = []
+let suggestedMovieList = []
+async function process(){    
     try{
         const user = await getCustomer(31)
         console.log(user);
         if (user[0].isGold){
             const movies = await getMovies();
-
-            movies.forEach(movie => {
-                if(movie.suggest){
-                    suggestedMovieList.push(movie)
-                }
-            });
-            console.log(suggestedMovieList);
+            console.log(movies);
             const receipt = await sendEmail(user[0].email)
             console.log(receipt);
         }
@@ -39,8 +30,13 @@ function getCustomer(id){
 function getMovies(){
     //console.log("Suggested Movies --> ")
     return new Promise((resolve,reject) => {
+        movieList.forEach(movie => {
+            if(movie.suggest){
+                suggestedMovieList.push(movie)
+            }
+        });
         setTimeout(() => {
-            resolve(movieList);
+            resolve(suggestedMovieList);
         },3000);
     });
 }
