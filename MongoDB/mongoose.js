@@ -16,7 +16,10 @@ mongo.connection
 
 
 async function fetchData() {
-    const data = await myModel.find({});
-    console.log(data);
+    const singleData = await myModel.findOne({purpose:'guest'});
+    const multipleData = await myModel.find({purpose:'guest'});
+    console.clear()
+    console.log(`Single Data ---> ${singleData}`);
+    console.log(`Multiple Data ---> ${multipleData}`);
 }
 fetchData()
