@@ -1,26 +1,26 @@
 [{
         "user": "Arka",
         "userName": "arka31",
-        "purpose": "Sudo"
+        "role": "admin"
     },
     {
         "user": "Arun",
         "userName": "arun123",
-        "purpose": "admin"
+        "role": "admin"
     },
     {
         "user": "Jacob",
         "userName": "jac45",
-        "purpose": "testing"
+        "role": "user"
     },
     {
         "user": "Ray",
         "userName": "ray87",
-        "purpose": "guest"
+        "role": "user"
     },
     {
         "user": "John",
         "userName": "john231",
-        "purpose": "guest"
+        "role": "guest"
     }
 ]
