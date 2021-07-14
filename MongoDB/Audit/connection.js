@@ -10,7 +10,7 @@ class connect{
 
     //Check status of connection
     connection = mongoose.connection
-        .once("open", () => console.log("Connected"))
+        .once("open", () => console.log("Connected To mongoDB"))
         .on("error", error => {
             console.log(`Error Details ---> ${errror}`);
         });
