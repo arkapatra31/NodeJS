@@ -1,0 +1,4 @@
+2021-07-16 01:27:29 [32minfo[39m: info logger
+2021-07-16 01:27:29 [33mwarn[39m: warning logger
+2021-07-16 01:27:29 [34mdebug[39m: debug logger
+2021-07-16 01:27:29 [31merror[39m: error logger

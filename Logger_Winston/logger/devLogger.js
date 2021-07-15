@@ -1,5 +1,6 @@
 const { format, createLogger, transports } = require('winston');
-const { timestamp, combine, printf, errors, json } = format;
+const { timestamp, combine,colorize, printf, errors, json } = format;
+var path = require('path')
 
 function buildDevLogger(){
     //Creating Custom Logger
@@ -12,12 +13,13 @@ function buildDevLogger(){
         /* format : format.json(), */
         //Using my custom format
         format : combine(
-            format.colorize(),timestamp({format : 'YYYY-MM-DD HH:mm:ss'}),logFormat
+            colorize(),timestamp({format : 'YYYY-MM-DD HH:mm:ss'}),logFormat
         ),
         defaultMeta : {service : 'user-service'},
         transports : [
-            new transports.Console(),
-            //new winston.transports.File({filename:'access.log'})
+            new transports.File({filename: 'log/dev/data.log'}),
+            new transports.File({filename: 'log/dev/access.err', level: 'err'}),
+            new transports.Console()
         ]
     })
 }

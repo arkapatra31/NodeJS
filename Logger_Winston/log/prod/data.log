@@ -1,0 +1,8 @@
+{"message":"info logger","level":"info","service":"user-service","timestamp":"2021-07-16 01:24:12"}
+{"message":"warning logger","level":"warn","service":"user-service","timestamp":"2021-07-16 01:24:12"}
+{"message":"debug logger","level":"debug","service":"user-service","timestamp":"2021-07-16 01:24:12"}
+{"message":"error logger","level":"error","service":"user-service","timestamp":"2021-07-16 01:24:12"}
+{"message":"info logger","level":"info","service":"user-service","timestamp":"2021-07-16 01:24:51"}
+{"message":"warning logger","level":"warn","service":"user-service","timestamp":"2021-07-16 01:24:51"}
+{"message":"debug logger","level":"debug","service":"user-service","timestamp":"2021-07-16 01:24:51"}
+{"message":"error logger","level":"error","service":"user-service","timestamp":"2021-07-16 01:24:51"}

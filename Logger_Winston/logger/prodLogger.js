@@ -1,4 +1,4 @@
-const { format, createLogger, transports } = require('winston');
+const { format, createLogger, transports, level } = require('winston');
 const { timestamp, combine, printf, errors, json } = format;
 
 function buildProdLogger(){
@@ -11,8 +11,9 @@ function buildProdLogger(){
         ),
         defaultMeta : {service : 'user-service'},
         transports : [
-            new transports.Console(),
-            //new winston.transports.File({filename:'access.log'})
+            
+            new transports.File({filename: 'log/prod/data.log'}),
+            new transports.File({filename: 'log/prod/access.err', level: 'err'})
         ]
     })
 }
