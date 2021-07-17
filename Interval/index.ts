@@ -1,15 +1,21 @@
+function sendToken1(){
+    let val = "auth23"
+    //console.log(val)
+    return (val);
+};
 
-
-function getToken(){
-    const token:String = "auth_token";
-    return token;
+/* export async function refreshToken(){
+    let val = sendToken()
+    console.log(val);
+    return val;
+} */
+module.exports =  async function getToken() {
+    setInterval(() => {
+     sendToken()
+    },1000);
 }
 
-async function runFetchToken(time:number) {
-    try{
-        setInterval(() => { console.log(getToken()) }, 1000);
 
-    }catch(error){
-        console.error(error.message);
-    }
-}
+
+
+
