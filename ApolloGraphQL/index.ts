@@ -7,7 +7,6 @@ const authClass = new fetchAuthToken();
 interface ContextInput{
   req: any;
   res: any;
-  token: any;
 }
 
 /* function getCookie(req:any, cookieName:any){
@@ -17,8 +16,8 @@ interface ContextInput{
 
 const server = new ApolloServer({
      typeDefs, resolvers , context: (contextInput : ContextInput) => {
-      let { req, res, token } = contextInput; 
-      token = authClass.fetchToken();
+      let { req, res } = contextInput; 
+      const token = authClass.fetchToken();
       return { token, res };
      }
     });
