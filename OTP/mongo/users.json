@@ -1,0 +1,38 @@
+[
+    {
+        "userName" : "arka31",
+        "email" : "arkapatra@test.com",
+        "password" : "arka31",
+        "mfaEnabled" : true
+    },
+    {
+        "userName" : "arun987",
+        "email" : "arun_m@test.com",
+        "password" : "arun123",
+        "mfaEnabled" : false
+    },
+    {
+        "userName" : "ajay",
+        "email" : "ajay@test.com",
+        "password" : "ajay123",
+        "mfaEnabled" : false
+    },
+    {
+        "userName" : "shouvik007",
+        "email" : "shouvik_007@test.com",
+        "password" : "shouvik123",
+        "mfaEnabled" : true
+    },
+    {
+        "userName" : "rounak01",
+        "email" : "rounak@test.com",
+        "password" : "rounak123",
+        "mfaEnabled" : true
+    },
+    {
+        "userName" : "jacob",
+        "email" : "jac_ob12@test.com",
+        "password" : "jacob123",
+        "mfaEnabled" : false
+    }
+]

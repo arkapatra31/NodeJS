@@ -1,14 +1,15 @@
-const mongo = require('mongoose')
-
-const url = "mongodb://127.0.0.1/PersonalDB";
+require('dotenv').config();
+const mongoose = require('mongoose');
+const url = process.env.MONGO_URL;
 
 class mongoConnect {
-    connect = mongo.connect(url, {
+    connect = mongoose.connect(url, {
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
+        useCreateIndex:true
     });
 
-    connStatus = mongo.connection
+    connStatus = mongoose.connection
         .once("open", () => console.log(`Connected to Mongoose at ${url}`))
         .on("error", error => {
             console.log(`Error Details ---> ${error}`);
