@@ -40,12 +40,12 @@ router.get('/assignProduct/:cust/:prd', async(req,res) => {
 
 router.get('/showProducts', async(req,res) => {
     const products = await productModel.find({}).populate({path: 'customer', model: 'C_CUSTS'});
-    res.status(200).send(products)
+    res.status(200).send(products);
 });
 
 router.get('/showCustomers', async(req,res) => {
     const customers = await custModel.find({}).populate({path: 'product', model: 'C_PRODUCTS'});
-    res.status(200).send(customers)
+    res.status(200).send(customers);
 });
 
 module.exports = router;
