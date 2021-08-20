@@ -15,4 +15,4 @@ app.get('/showProducts', router);
 app.get('/assignProduct/:cust/:prd', router);
 app.get('/showCustomers', router);
 
-app.listen(4000, () => console.log("Express Server is running at 4000"))
+app.listen(4000, () => console.log("Express Server is running at 4000"));
