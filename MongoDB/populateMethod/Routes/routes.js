@@ -38,6 +38,8 @@ router.get('/assignProduct/:cust/:prd', async(req,res) => {
     res.status(200).send(cust);
 });
 
+
+//populate({path:attribute name in collection, model : collection name})
 router.get('/showProducts', async(req,res) => {
     const products = await productModel.find({}).populate({path: 'customer', model: 'C_CUSTS'});
     res.status(200).send(products);
