@@ -1,12 +1,15 @@
-let currentTS = new Date();
-let currentOffset = currentTS.getTimezoneOffset();
-let ISTOffset = 660; // IST offset UTC +5:30
+function fetchIST(){
+  let currentTS = new Date();
+  let currentOffset = currentTS.getTimezoneOffset();
+  let ISTOffset = 660; // IST offset UTC +5:30
+  
+  let ISTTS = new Date(
+    currentTS.getTime() + (ISTOffset + currentOffset) * 60000
+  );
+  return ISTTS;
+}
 
-let ISTTS = new Date(
-  currentTS.getTime() + (ISTOffset + currentOffset) * 60000
-);
-
-module.exports = ISTTS;
+module.exports = fetchIST;
 
 
 /* let current = new Date();
