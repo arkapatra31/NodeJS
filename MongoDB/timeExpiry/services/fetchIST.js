@@ -1,7 +1,7 @@
 function fetchIST(){
   let currentTS = new Date();
-  let currentOffset = currentTS.getTimezoneOffset();
-  let ISTOffset = 660; // IST offset UTC +5:30
+  let currentOffset = currentTS.getTimezoneOffset(); // -330
+  let ISTOffset = 660; // IST offset UTC +5:30 so -330+660 = 330
   
   let ISTTS = new Date(
     currentTS.getTime() + (ISTOffset + currentOffset) * 60000
