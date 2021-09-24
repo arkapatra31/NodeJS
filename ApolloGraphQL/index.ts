@@ -1,10 +1,10 @@
-const { ApolloServer, gql } = require('apollo-server');
+const { ApolloServer, gql } = require("apollo-server");
 import { typeDefs } from "./schema";
 import { resolvers } from "./resolver";
-import fetchAuthToken from './authToken';
+import fetchAuthToken from "./authToken";
 const authClass = new fetchAuthToken();
 
-interface ContextInput{
+interface ContextInput {
   req: any;
   res: any;
 }
@@ -15,17 +15,17 @@ interface ContextInput{
 } */
 
 const server = new ApolloServer({
-     typeDefs, resolvers , context: (contextInput : ContextInput) => {
-      let { req, res } = contextInput; 
-      const token = authClass.fetchToken();
-      return { token, res };
-     }
-    });
+  typeDefs,
+  resolvers,
+  context: (contextInput: ContextInput) => {
+    let { req, res } = contextInput;
+    const token = authClass.fetchToken();
+    return { token, res };
+  },
+});
 
 //Start Server
 // The `listen` method launches a web server.
 server.listen().then(({ url }) => {
   console.log(`🚀 🚀 🚀  Server ready at ${url}`);
 });
-
-  
