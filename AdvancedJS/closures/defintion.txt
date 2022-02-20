@@ -1,0 +1,9 @@
+In JS, when we return a inner function from the parent function, we are effecively returing a combination of the function definition
+along with the function's scope.
+This would let the function definition have an associated persistent memory which could hold on to the live date between executions.
+That combinations of the function and its scope chain is what is called a closure in JS.
+
+
+With reference to the example :- 
+When we are returing the inner() from the outer() it bundles up the counter c value along with it and hence the counter c is incremented.
+When we are storing the outer() inside the variable fn it hold the value of the incremented counter value and as a result when it is executed twice the incremented counter is incremented again.

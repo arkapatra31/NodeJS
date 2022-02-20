@@ -1,0 +1,3 @@
+Currying is process in functional programming in which we transform a function with multiple arguements into a sequence of nestion functions that takes one arguement at a time.
+
+Note that curring doesn't deal with invoking functions, it just transforms a function.
