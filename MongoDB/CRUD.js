@@ -20,6 +20,32 @@ async function fetchData() {
     console.log(`Single Data ---> ${singleData}`);
     console.log(`Multiple Data ---> ${multipleData}`);
 }
+
+// Query Parameters (Extra)
+async function fetchWithParams() {
+  const singleData = await myModel.find({ role: "admin" })
+                    .limit(10) //limit no of documents
+                    .sort({ role : 1 }) //sort document by role in asc order
+                    .select({role : 1, user : 1}) // select specific property of the doc
+                    .exec();
+}
+
+//Comparison , Logical Operators
+/*
+    async function fetchWithParams() {
+    const singleData = await myModel
+                        .find({ price : {$gte : 10, $lte : 20} })
+                        .find({ price : {$in : [10,15,29]} })
+
+                        //Logical
+                        .find()
+                        .or([{price : 10}, {role : 'Admin'}])
+                        .and([])
+                        
+}
+*/
+
+
 //fetchData()
 
 //Update Operation
