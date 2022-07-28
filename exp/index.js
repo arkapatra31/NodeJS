@@ -24,7 +24,7 @@ function logger(req, res, next){
 }
 
 function audit(req, res, next){
-    console.log("Audit");
+    console.log("Auditing");
     next();
 }
 
