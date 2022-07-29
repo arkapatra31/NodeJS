@@ -1,7 +1,9 @@
 const express = require('express');
+const morgan = require('morgan');
 var app = express();
 
 app.use(logger);
+app.use(morgan('short'));
 
 app.get('/', (req,res, next) => {
     console.log("Home");

@@ -1,16 +1,19 @@
 {
-  "name": "exp",
+  "name": "mocha",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha || true"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
   "dependencies": {
-    "debug": "^4.3.4",
-    "morgan": "^1.10.0"
+    "chai-http": "^4.3.0"
   }
 }

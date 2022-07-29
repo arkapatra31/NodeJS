@@ -1,3 +1,6 @@
-const debug = require('debug')('app:StartUp');
+const debug = require('debug')('debug');
+const err = require('debug')('error');
 
-debug("Successfully Debugging");
+
+debug("Successfully Debugging"); //DEBUG = debug
+err("Error");
