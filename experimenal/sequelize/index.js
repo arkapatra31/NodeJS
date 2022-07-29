@@ -10,8 +10,8 @@ sequelize
   .sync({force: true})
   // .sync()
   .then((result) => {
-    return Customer.create({name: "Chandler Bing", email: "cb@gmail.com"})
     console.log(result);
+    return Customer.create({name: "Chandler Bing", email: "cb@gmail.com"})
   })
   .then(customer => {
     customerId = customer.id;
@@ -28,3 +28,20 @@ sequelize
   .catch((err) => {
     console.log(err);
   });
+
+
+  //AND Condition
+  Order.findAll({
+    where : {
+        [sequelize.and] : {total : 12}
+    }
+  }); //returns a promise
+
+  //OR Condition
+  Customer.findAll({
+    where : {
+        [sequelize.or] : [{
+            name: "Arun"
+        }]
+    }
+  }); //returns a promise
