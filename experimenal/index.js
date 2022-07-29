@@ -19,8 +19,9 @@ app.get('/users', (req,res, next) => {
 //app.use(logger);
 
 function logger(req, res, next){
-    console.log("Logging");
     next();
+    console.log("Logging");
+    
 }
 
 function audit(req, res, next){
