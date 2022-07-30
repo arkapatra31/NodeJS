@@ -1,8 +1,16 @@
-{"message":"info logger","level":"info","service":"user-service","timestamp":"2021-07-16 01:24:12"}
-{"message":"warning logger","level":"warn","service":"user-service","timestamp":"2021-07-16 01:24:12"}
-{"message":"debug logger","level":"debug","service":"user-service","timestamp":"2021-07-16 01:24:12"}
-{"message":"error logger","level":"error","service":"user-service","timestamp":"2021-07-16 01:24:12"}
-{"message":"info logger","level":"info","service":"user-service","timestamp":"2021-07-16 01:24:51"}
-{"message":"warning logger","level":"warn","service":"user-service","timestamp":"2021-07-16 01:24:51"}
-{"message":"debug logger","level":"debug","service":"user-service","timestamp":"2021-07-16 01:24:51"}
-{"message":"error logger","level":"error","service":"user-service","timestamp":"2021-07-16 01:24:51"}
+{"message":"info logger","level":"info","service":"user-service","timestamp":"2022-07-31 01:17:52"}
+{"message":"warning logger","level":"warn","service":"user-service","timestamp":"2022-07-31 01:17:52"}
+{"message":"debug logger","level":"debug","service":"user-service","timestamp":"2022-07-31 01:17:52"}
+{"message":"error logger","level":"error","service":"user-service","timestamp":"2022-07-31 01:17:52"}
+{"message":"info logger","level":"\u001b[32minfo\u001b[39m","service":"user-service","timestamp":"2022-07-31 01:19:54"}
+{"message":"warning logger","level":"\u001b[33mwarn\u001b[39m","service":"user-service","timestamp":"2022-07-31 01:19:54"}
+{"message":"debug logger","level":"\u001b[34mdebug\u001b[39m","service":"user-service","timestamp":"2022-07-31 01:19:54"}
+{"message":"error logger","level":"\u001b[31merror\u001b[39m","service":"user-service","timestamp":"2022-07-31 01:19:54"}
+{"message":"info logger","level":"info","service":"user-service","timestamp":"2022-07-31 01:20:22"}
+{"message":"warning logger","level":"warn","service":"user-service","timestamp":"2022-07-31 01:20:22"}
+{"message":"debug logger","level":"debug","service":"user-service","timestamp":"2022-07-31 01:20:22"}
+{"message":"error logger","level":"error","service":"user-service","timestamp":"2022-07-31 01:20:22"}
+{"message":"info logger","level":"info","service":"user-service"}
+{"message":"warning logger","level":"warn","service":"user-service"}
+{"message":"debug logger","level":"debug","service":"user-service"}
+{"message":"error logger","level":"error","service":"user-service"}
