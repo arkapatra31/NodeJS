@@ -19,29 +19,6 @@ app.get('/',(req,res) => {
     res.send("This is index page")
 })
 
-
-
-let token = "";
-const user = {
-    name : "John",
-    userId : 123
-}
-//Checking for JWT across requests
-app.get('/login', (req, res) => {
-    
-    token = jwt.sign(user, "JWT_KEY");
-    res.setHeader("x-authorization", token);
-    res.send({token})
-});
-
-app.post('/myProfile', (req, res) => {
-    const authToken = req.body.token;
-    let user = jwt.verify(authToken,"JWT_KEY");
-    res.send(_.pick(user, ['name']));
-});
-
-
-
 //Assign port dynamically based on env
 const port = process.env.PORT || 3000
 app.listen(3000, () => console.log(`App is running at http://localhost:${port}`));
