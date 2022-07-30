@@ -1,7 +1,7 @@
 //Will print after specified time
 const timeout = setTimeout(() => {
     console.log("SetTimeOut")
-},1000*2); //ms
+},1000*5); //ms
 
 
 // setImmediate() will execute code at the end of the current event loop cycle. This code will execute after any I/O operations in the current event loop and before any timers scheduled for the next event loop
@@ -15,8 +15,15 @@ const interval = setInterval(() => {
     console.log("SetInterval");
 }, 1000*3);
 
+console.log("Before Next Tick");
 
-clearTimeout(timeout);
-clearImmediate(immediate);
-clearInterval(interval);
-console.clear();
+const nextTick = process.nextTick(() => {
+    console.log("Next Tick")
+});
+
+console.log("After Next Tick");
+
+
+// clearTimeout(timeout);
+// clearImmediate(immediate);
+// clearInterval(interval);
