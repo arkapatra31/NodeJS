@@ -34,9 +34,9 @@ app.get('/login', (req, res) => {
     res.send({token})
 });
 
-app.get('/myProfile', (req, res) => {
-    console.log(token)
-    let user = jwt.verify(token,"JWT_KEY");
+app.post('/myProfile', (req, res) => {
+    const authToken = req.body.token;
+    let user = jwt.verify(authToken,"JWT_KEY");
     res.send(_.pick(user, ['name']));
 });
 
