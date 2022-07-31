@@ -7,6 +7,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "india-pincode-lookup": "^1.0.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.34",
     "mongoose": "^5.13.2",
     "postal-codes-js": "^2.5.2",
     "underscore": "^1.13.1",
