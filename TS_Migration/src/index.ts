@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 
-app.get('/',(req, res) => {
+app.get('/',(req: any, res: any) => {
     res.send("This is index page");
 })
 
