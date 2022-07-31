@@ -30,6 +30,9 @@ class features implements infc{
     rest = (name : String, ...num : Number[]) : void => {
 
     }
+
+    user = { name : "John", id : 123 };
+    
     
    
 }
