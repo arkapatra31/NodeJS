@@ -9,7 +9,7 @@
 let person1 = {
     name : "John",
     surname : "Doe",
-    f : () => { console.log("Function from person 1") }
+    f : function() { console.log(`${this.name} ${this.surname}`) }
 }
 
 let person2 = {
@@ -23,3 +23,5 @@ let printInfo = function(id, email) {
 
 //printInfo.call(person1, "123", "abc@test.com");
 printInfo.apply(person1, ["123", "abc@test.com"]);
+
+person1.f.apply(person2);
