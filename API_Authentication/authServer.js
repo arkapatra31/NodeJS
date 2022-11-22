@@ -24,6 +24,7 @@ app.delete('/logout', (req, res) => {
   res.sendStatus(204)
 })
 
+//On login return the token which will be used to access posts in server.js
 app.post('/login', (req, res) => {
   // Authenticate User
 

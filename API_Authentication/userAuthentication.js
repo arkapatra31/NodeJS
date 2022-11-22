@@ -1,3 +1,4 @@
+//This is different because we are saving the token in cookie
 const express = require("express")
 const jwt = require('jsonwebtoken')
 const _  = require("lodash")
