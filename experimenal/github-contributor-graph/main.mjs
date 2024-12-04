@@ -4,11 +4,6 @@ import git from 'simple-git';
 const simpleGit = git();
 
 async function makeCommit(n) {
-    console.log(await simpleGit.checkIsRepo());
-
-    // Check the repo name
-    console.log(await simpleGit.revparse(['--show-toplevel']));
-
     if (n === 0) return simpleGit.push();
     else {
         for (let i = 0; i < n; i++) {
@@ -16,7 +11,7 @@ async function makeCommit(n) {
             const y = Math.floor(Math.random() * 7);  // Generate a random integer between 0 and 6
             const DATE = moment().subtract(1, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format();
             console.log(DATE);
-            // Create Empty Commit
+            //Create Empty Commit
             await simpleGit.commit(`Commit for ${DATE}`, {
                 '--allow-empty': null,
                 '--date': DATE
