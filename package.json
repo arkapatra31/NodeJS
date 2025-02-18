@@ -17,6 +17,7 @@
     "zipcodes": "^8.0.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.10"
